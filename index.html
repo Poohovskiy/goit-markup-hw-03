@@ -9,42 +9,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>WebStudio</title>
 </head>
     <body>
         <!-- Шапка загальна -->
         <header class="site-header">
-            <nav class="site-nav">
-                <a href="index.html" lang="en"><span class="logo-part-one">Web</span> <span class="logo-part-two">Studio</span> </a>     
-                <!-- Шапка-ліво -->
-                <ul>
-                    <li><a href="./index.html" class="site-nav-link" >Студія</a></li>
-                    <li><a href="./portfolio.html" class="site-nav-link">Портфоліо</a></li>
-                    <li><a href="" class="site-nav-link" >Контакти</a></li>
-                </ul>
-            </nav>
-
+            <div class="navcontainer">
+                <nav class="site-nav">
+                    <a href="index.html" lang="en"><span class="logo-part-one">Web</span> <span class="logo-part-two">Studio</span>
+                    </a>
+                    <!-- Шапка-ліво -->
+                    <ul>
+                        <li><a href="./index.html" class="site-nav-link">Студія</a></li>
+                        <li><a href="./portfolio.html" class="site-nav-link">Портфоліо</a></li>
+                        <li><a href="" class="site-nav-link">Контакти</a></li>
+                    </ul>
+                </nav>
+            </div>
                 <!-- Шапка-контакти -->
+            <div class="contactcontainer">
                 <ul>
                     <li><a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a> </li>
                     <li><a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a> </li>
-                </ul>
+                    </ul>
+            </div>
         </header>
-
+    
         <!-- Основний контент -->
         <main>
             <!-- Hero заголовок -->
             <section class="hero">
-                <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-button" type="button">Замовити послугу</button>
+                <div class="herocontainer">
+                    <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+                    <button class="hero-button" type="button">Замовити послугу</button>
+                </div>
             </section>
 
-
-            <div class="benefit-and-what-we-do-background-color">
-                <section class="section">
-                    <!-- Приховати даний заголовок -->
-                    <h2 class="section-title">Наші переваги</h2>
+            <!-- Наші переваги -->
+            <!-- Приховати даний заголовок -->
+            <section class="section secondary no-padding">
+                <div class="benefit-container">
+                    <h2 class="section-title-hiden">Наші переваги</h2>
                     <ul>
                         <li>
                             <h3 class="benefit-section-title-text">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -69,23 +76,25 @@
                                 завдань.</p>
                         </li>
                     </ul>
-                </section>
+                </div>
+            </section>
                 
-                <section>
+            <section class="section secondary no-padding">
+                <div class="what-we-do-container">
                     <h2 class="section-title">Чим ми займаємося</h2>
                     <ul>
-                        <li> <a href=""></a> <img width="370" src="./images/index/robota1.jpg"
-                                alt="Розробка програмного забезпечення та його тестування"> </li>
-                        <li> <a href=""></a> <img width="370" src="./images/index/robota2.jpg"
-                                alt="Розробка мобільних додатків та їх тестування"> </li>
-                        <li> <a href=""></a> <img width="370" src="./images/index/robota3.jpg"
-                                alt="Розробка дизайну вашого майбутнього проекту"> </li>
+                        <li class="what-we-do-image"> <a href=""></a> <img width="370" src="./images/index/robota1.jpg"
+                                    alt="Розробка програмного забезпечення та його тестування"> </li>
+                        <li class="what-we-do-image"> <a href=""></a> <img width="370" src="./images/index/robota2.jpg"
+                                    alt="Розробка мобільних додатків та їх тестування"> </li>
+                        <li class="what-we-do-image"> <a href=""></a> <img width="370" src="./images/index/robota3.jpg"
+                                    alt="Розробка дизайну вашого майбутнього проекту"> </li>
                     </ul>
-                </section>
-            </div>
-
-            <div class="team-background-color">   
-                <section>
+                </div>
+            </section>
+            
+            <section class="section third no-padding">
+                <div class="teamcontainer">
                     <h2 class="section-title">Наша команда</h2>
                     <ul>
                         <li><img width="270" src="./images/index/igor.jpg" alt="Ігор Дем'яненко Product Designer">
@@ -108,22 +117,23 @@
                             <p lang="en" class="team-section-paragraph">UI Designer</p>
                         </li>
                     </ul>
-                </section>
-            </div>
-
+                </div>
+            </section>
         </main>    
 
         <!-- Підвал -->
         <footer class="footer-page">
-
-            <a href="index.html" lang="en"><span class="logo-part-one">Web</span> <span class="logo-part-three">Studio</span> </a>
-            <address>
-                <ul>
-                    <li> <a href="https://goo.gl/maps/7kfiWNjeo1rzyNs9A" class="contact-link-map"> м. Київ, пр-т Лесі Українки, 26</a></li>
-                    <li><a href="mailto:info@devstudio.com" class="contact-link-footer">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="contact-link-footer">+38 096 111 11 11</a> </li>
-                </ul>
-            </address>   
+            <div class="footercontainer">
+                <a href="index.html" lang="en"><span class="logo-part-one">Web</span> <span class="logo-part-three">Studio</span> </a>
+                <address>
+                    <ul>
+                        <li> <a href="https://goo.gl/maps/7kfiWNjeo1rzyNs9A" class="contact-link-map"> м. Київ, пр-т Лесі Українки,
+                                26</a></li>
+                        <li><a href="mailto:info@devstudio.com" class="contact-link-footer mail">info@devstudio.com</a></li>
+                        <li><a href="tel:+380961111111" class="contact-link-footer phone">+38 096 111 11 11</a> </li>
+                    </ul>
+                </address>
+            </div>
         </footer>
 
     </body>
