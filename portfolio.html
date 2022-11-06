@@ -15,39 +15,41 @@
 <body>
     <!-- Шапка загальна -->
         <header class="site-header">
-            <div class="navcontainer">
-                <nav class="site-nav">
+            <div class="headercontainerflex">
+                <nav class="navcontainer">
                     <a href="index.html" lang="en"><span class="logo-part-one">Web</span> <span
                             class="logo-part-two">Studio</span>
                     </a>
                     <!-- Шапка-ліво -->
-                    <ul>
-                        <li><a href="./index.html" class="site-nav-link">Студія</a></li>
-                        <li><a href="./portfolio.html" class="site-nav-link">Портфоліо</a></li>
-                        <li><a href="" class="site-nav-link">Контакти</a></li>
+                    <ul class="site-nav list">
+                        <li class="item"><a href="./index.html" class="site-nav-link">Студія</a></li>
+                        <li class="item"><a href="./portfolio.html" class="site-nav-link">Портфоліо</a></li>
+                        <li class="item"><a href="" class="site-nav-link">Контакти</a></li>
                     </ul>
                 </nav>
+        
+                <!-- Шапка-контакти -->
+                <div class="contactcontainer">
+                    <ul class="header-contact">
+                        <li class="item"><a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a> </li>
+                        <li class="item"><a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a> </li>
+                    </ul>
+                </div>
             </div>
-            <!-- Шапка-контакти -->
-            <div class="contactcontainer">
-                <ul>
-                    <li><a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a> </li>
-                    <li><a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a> </li>
-                </ul>
-            </div>
+        
         </header>
 
-    <main>
+    <main class="portfolio-background-color">
         <div class="portfolio-background-color" >
             <!-- Фільтраційні-кнопки -->
 
             <div class="filterbutton">
-                <ul>
-                    <li> <button type="button" class="filtering-button">Усі</button></li>
-                    <li> <button type="button" class="filtering-button">Веб-сайти</button></li>
-                    <li> <button type="button" class="filtering-button">Додатки</button></li>
-                    <li> <button type="button" class="filtering-button">Дизайн</button></li>
-                    <li> <button type="button" class="filtering-button">Маркетинг</button></li>
+                <ul class="filtre-item">
+                    <li class="filtre-buttom"> <button type="button" class="filtering-button">Усі</button></li>
+                    <li class="filtre-buttom"> <button type="button" class="filtering-button">Веб-сайти</button></li>
+                    <li class="filtre-buttom"> <button type="button" class="filtering-button">Додатки</button></li>
+                    <li class="filtre-buttom"> <button type="button" class="filtering-button">Дизайн</button></li>
+                    <li class="filtre-buttom"> <button type="button" class="filtering-button">Маркетинг</button></li>
                 </ul>
             </div>
             
@@ -55,8 +57,8 @@
             <section>
                 <div class="portfoliocontainer">
                     <h1 class="section-title">Наше Портфоліо</h1>
-                    <ul>
-                        <li>
+                    <ul class="portfolio-item">
+                        <li class="portfolio-example">
                             <a href="">
                                 <img width="370" src="./images/portfolio/tehnocryak.jpg" alt="Сайт Технокряк">
                                 <h2 class="portfolio-text">Технокряк</h2>
@@ -64,7 +66,7 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="portfolio-example">
                             <a href="">
                                 <img width="370" src="./images/portfolio/neworlean.jpg" alt="Постер New Orlean vs Golden Star">
                                 <h2 class="portfolio-text"> Постер <span lang="en">New Orlean vs Golden Star</span> </h2>
@@ -72,7 +74,7 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="portfolio-example">
                             <a href="">
                                 <img width="370" src="./images/portfolio/seafood.jpg" alt="Ресторан Seafood">
                                 <h2 class="portfolio-text">Ресторан <span lang="en">Seafood</span> </h2>
@@ -80,7 +82,7 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="portfolio-example">
                             <a href="./">
                                 <img width="370" src="./images/portfolio/prime.jpg" alt="Проєкт Prime">
                                 <h2 class="portfolio-text">Проєкт <span lang="en">Prime</span></h2>
@@ -88,7 +90,7 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="portfolio-example">
                             <a href="">
                                 <img width="370" src="./images/portfolio/boxes.jpg" alt="Проєкт Boxes">
                                 <h2 class="portfolio-text">Проєкт <span lang="en">Boxes</span></h2>
@@ -96,7 +98,7 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="portfolio-example">
                             <a href="">
                                 <img width="370" src="./images/portfolio/noborders.jpg" alt="Inspiration has no Borders">
                                 <h2 lang="en" class="portfolio-text">Inspiration has no Borders</h2>
@@ -104,7 +106,7 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="portfolio-example">
                             <a href="">
                                 <img width="370" src="./images/portfolio/limitededitionbook.jpg" alt="Видання Limited Edition">
                                 <h2 class="portfolio-text">Видання <span lang="en">Limited Edition</span> </h2>
@@ -112,7 +114,7 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="portfolio-example">
                             <a href="">
                                 <img width="370" src="./images/portfolio/projectlab.jpg" alt="Проєкт LAB">
                                 <h2 class="portfolio-text">Проєкт <span>LAB</span></h2>
@@ -120,7 +122,7 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="portfolio-example">
                             <a href="./">
                                 <img width="370" src="./images/portfolio/grovingbussiness.jpg" alt="Growing Business">
                                 <h2 lang="en" class="portfolio-text">Growing Business</h2>

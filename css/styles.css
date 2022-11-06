@@ -60,7 +60,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .site-header {
     background-color: var(--hero-title-color);
-    border: 2px solid tomato;
+    /* border: 2px solid tomato; */
+    border-bottom: 1px solid #ECECEC;
 }
 
 .navcontainer {
@@ -68,16 +69,29 @@ h1, h2, h3, h4, h5, h6, p {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 1230px;
+    /* border: 2px solid tomato; */
+    display: flex;
+    align-items: center;
 }
 
-.contactcontainer, .herocontainer, .benefit-container, .what-we-do-container, .teamcontainer, .footercontainer , .filterbutton , .portfoliocontainer {
+.headercontainerflex {
+    display: flex;
+    width: 1230px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* border: 2px solid tomato; */
+}
+
+.herocontainer, .benefit-container, .what-we-do-container, .teamcontainer, .footercontainer , .filterbutton , .portfoliocontainer {
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
     width: 1230px;
-    border: 2px solid tomato;
+    /* border: 2px solid tomato; */
 }
 
 .logo-part-one {
@@ -94,6 +108,8 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+        padding-top: 24px;
+            padding-bottom: 24px;
 }
 
 /* Навігація шапка */
@@ -101,13 +117,59 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--accent-color); 
 }
 
+.site-nav, .item {
+    display: flex;
+    color: var(--title-text-color);
+    /* margin-right: 50px; */
+}
+
+.site-nav {
+    margin-left: 93px;
+}
+
+/* .site-nav, .item:not(:last-child) {
+    margin-right: 50px;
+}  */
+
+.site-nav .item + .item {
+    margin-left: 50px;
+}
+
+
 .site-nav-link {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    /* border: 2px solid black; */
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
+
+/* Шапка контакти */
+
+.contactcontainer {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        /* border: 2px solid tomato; */
+        display: flex;
+        align-items: center;
+
+}
+
+.header-contact {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-contact .item+.item {
+    margin-left: 50px;
+}
+
 
 .contact-link:hover, .contact-link:focus, .contact-link:active {
     color: var(--accent-color);
@@ -118,6 +180,8 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 /* Заголовок та бекграунд Hero */
@@ -154,21 +218,32 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* Наші переваги */
 
+.backgroundsection {
+    background-color: var(--secondary-background-color);
+}
+
 .section {
     margin: 0;
     padding: 0;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .secondary {
     background-color: var(--secondary-background-color);
 }
 
-.benefit {
+.benefits-item {
+    display: flex;
 
 }
 
+.benefits-item .item+.item {
+    margin-left: 50px;
+    /* border: 2px solid tomato; */
+}
+
 .section-title-hiden {
+    background-color: var(--secondary-background-color);
 color: var(--title-text-color);
 font-weight: 700;
 font-size: 36px;
@@ -196,12 +271,33 @@ margin-top: 94px;
 
 /* Чим ми займаємося */
 
+.what-we-do-item {
+    display: flex;
+}
+
+.what-we-do-item .what-we-do-image+.what-we-do-image {
+    margin-left: 30px;
+    /* border: 2px solid tomato; */
+}
+
+
 .what-we-do-image {
     padding-bottom: 94px;
 }
 
 
 /* Наша команда */
+
+.team-item {
+    display: flex;
+    text-align: center;
+}
+
+.team-item .team-member+.team-member {
+    margin-left: 30px;
+    /* border: 2px solid tomato; */
+}
+
 
 .third {
     background-color: var(--third-background-color);
@@ -228,6 +324,7 @@ margin-bottom: 10px;
 
 .footer-page {
     background-color: var(--hero-background-color);
+    /* border: 2px solid tomato; */
 }
 
 .footercontainer {
@@ -258,7 +355,7 @@ margin-bottom: 10px;
 }
 
 .phone {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .logo-part-three {
@@ -284,8 +381,26 @@ margin-bottom: 10px;
     padding-top: 94px;
     margin-top: 0px;
     margin-bottom: 50px;
-    border: 2px solid tomato;
+    /* border: 2px solid tomato; */
+    text-align: center;
+    justify-content: center;
+
 }
+
+
+
+.filtre-item {
+    display: flex;
+    align-items: center;
+justify-content: center;
+
+}
+
+.filtre-item .filtre-buttom+.filtre-buttom {
+    margin-left: 8px;
+    /* border: 2px solid tomato; */
+}
+
 
 .filtering-button {
     background-color: var(--ffiltering-button-bj-color-pasive);
@@ -300,6 +415,29 @@ margin-bottom: 10px;
     text-align: center;
 }
 
+.portfoliocontainer {
+margin-bottom: 94px;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.portfolio-example {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolio-item :nth-child(3n) {
+    margin-right: 0;
+}
+
+.portfolio-item :nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
 .portfolio-text {
     color: var(--title-text-color);
     font-weight: 700;
@@ -307,6 +445,8 @@ margin-bottom: 10px;
     line-height: 2.0;
     letter-spacing: 0.06em;
     margin-top: 20px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
     }
 
 .portfolio-paragraph {
@@ -316,4 +456,7 @@ margin-bottom: 10px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     margin-top: 4px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
