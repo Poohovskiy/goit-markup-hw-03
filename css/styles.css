@@ -228,6 +228,10 @@ h1, h2, h3, h4, h5, h6, p {
 .backgroundsection {
 }
 
+.contentinterval {
+    padding-top: 94px;
+}
+
 .secondary {
     padding-top: 0;
 }
@@ -283,7 +287,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .working {
     padding-top: 0;
-    margin-top: 94px;
+
 }
 
 .what-we-do-item .what-we-do-image+.what-we-do-image {
@@ -333,6 +337,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    padding-bottom: 30px;
 }
 
 /* Підвал */
