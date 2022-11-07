@@ -50,7 +50,7 @@ a {
     text-align: center;
     padding: 0;
     margin-bottom: 50px;
-    margin-top: 94px;
+
 }
 
 .no-padding {
@@ -229,7 +229,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .secondary {
-
+    padding-top: 0;
 }
 
 .benefits-item {
@@ -265,7 +265,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 10px;
-    margin-top: 94px;
+
 }
 
 .benefit-section-title-paragraph {
@@ -339,7 +339,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .footer-page {
     background-color: var(--hero-background-color);
-    margin-top: 124px;
     /* border: 2px solid tomato; */
 }
 
@@ -415,7 +414,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 .filtering-button {
-    background-color: var(--ffiltering-button-bj-color-pasive);
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -475,4 +473,5 @@ h1, h2, h3, h4, h5, h6, p {
     border-right: 1px solid #EEEEEE;
     padding-left: 24px;
     margin-top: 4px;
+    padding-bottom: 20px;
 }
