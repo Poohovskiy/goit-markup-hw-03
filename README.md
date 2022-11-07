@@ -1,2 +1,2 @@
-# goit-markup-hw-02
-Домашнє завдання 2: css
+# goit-markup-hw-03
+Домашнє завдання 3: flex-box
