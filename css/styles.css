@@ -115,8 +115,8 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-        padding-top: 24px;
-            padding-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 /* Навігація шапка */
@@ -158,13 +158,13 @@ h1, h2, h3, h4, h5, h6, p {
 /* Шапка контакти */
 
 .contactcontainer {
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-        /* border: 2px solid tomato; */
-        display: flex;
-        align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* border: 2px solid tomato; */
+    display: flex;
+    align-items: center;
 
 }
 
@@ -247,7 +247,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .section-title-hiden {
-position: absolute;
+    position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -320,12 +320,12 @@ position: absolute;
 }
 
 .team-section-title {
-color: var(--title-text-color);
-font-weight: 500;
-font-size: 16px;
-line-height: 1.19;
-margin-top: 30px;
-margin-bottom: 10px;
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-section-paragraph {
@@ -429,7 +429,7 @@ margin-bottom: 10px;
 }
 
 .portfoliocontainer {
-margin-bottom: 94px;
+    margin-bottom: 94px;
 }
 
 .portfolio-item {
